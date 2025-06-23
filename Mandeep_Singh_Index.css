@@ -1,0 +1,70 @@
+
+/*
+    COMP213 - (SEC. 405) | index page
+    Author: Mandeep Singh
+    Student ID: 300858298
+    Date: 14-Oct-2024
+    Filename: Mandeep_Singh_index.html
+    Related files: Mandeep_Singh_index.css
+    & Mandeep_Singh_index.js
+*/
+
+
+/* similar assignments contains the similar assignments list */
+.Assignments {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.assignment-list {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.assignment-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: 10%; /* Adjust width to fit three items in one line */
+    text-align: center;
+    flex: 0 0 28%; /* Ensure items don't shrink or grow */
+}
+
+.assignment-item img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+.assignment-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.assignment-item p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+
+.button {
+    background: linear-gradient(to right, #e8d2ff, #96a0ff); /* Green gradient */
+    color: rgb(255, 255, 255); /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow */
+    display: inline-block; /* Ensure proper padding and margin */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    margin-top: 10px;
+    font-size: 1.0em;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #96a0ff, #e8d2ff);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
