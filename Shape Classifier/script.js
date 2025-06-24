@@ -16,7 +16,7 @@ async function loadAndSliceImage(imageSrc, label) {
             const canvas = document.createElement('canvas');
             canvas.width = img.width;
             canvas.height = img.height;
-            const ctx = canvas.getContext('2d');
+            const ctx = canvas.getContext('2d', { willReadFrequently: true });
             ctx.drawImage(img, 0, 0);
 
             const images = [];
@@ -85,19 +85,19 @@ async function startTraining() {
 
 function clearCanvas() {
     const canvas = document.getElementById('drawCanvas');
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
     ctx.fillStyle = 'white';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
 function getCanvasImage() {
     const canvas = document.getElementById('drawCanvas');
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
 
     const smallCanvas = document.createElement('canvas');
     smallCanvas.width = 28;
     smallCanvas.height = 28;
-    const smallCtx = smallCanvas.getContext('2d');
+    const smallCtx = smallCanvas.getContext('2d', { willReadFrequently: true });
     smallCtx.drawImage(canvas, 0, 0, 28, 28);
     const smallImageData = smallCtx.getImageData(0, 0, 28, 28);
 
