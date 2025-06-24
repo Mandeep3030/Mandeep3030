@@ -1,0 +1,59 @@
+/*
+    COMP213 - (SEC. 405) | Midterm
+    Author: Mandeep Singh
+    Student ID: 300858298
+    Date: 15-Oct-2024
+    Filename: Mandeep_Singh_Midterm.css
+    Related files: Mandeep_Singh_Midterm.html
+*/
+
+/* General page styling */
+body {
+    font-family: Arial, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Table location */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Table border and text padding */
+table, th, td {
+    border: 2px solid black;
+    padding-right: 20px;
+    text-align: left;
+}
+
+/* Table header row styling */
+thead th {
+    background-color: #6DAF30;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Apply alternating row colors using nth-child pseudo-class */
+tbody tr:nth-child(odd) {
+    background-color: #d1f057;
+}
+tbody tr:nth-child(even) {
+    background-color: #d4eab0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Copyright font size */
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+}

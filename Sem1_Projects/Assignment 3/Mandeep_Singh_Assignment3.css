@@ -1,0 +1,329 @@
+/*
+    COMP213 - (SEC. 405) | Assignment 3
+    Author: Mandeep Singh
+    Student ID: 300858298
+    Date: 14-Oct-2024
+    Filename: Mandeep_Singh_Assignment3.html
+    Related files: Mandeep_Singh_Assignment3.css
+*/
+
+/* Reset some of default browser styles */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, sans-serif;
+    background: linear-gradient(to right, #e8f4f8, #a1c4fd); /* Gradient background */
+}
+
+/* articale conatains all the content */
+article {
+    margin: 20px;
+    width: 80%;
+    background-color: rgba(242, 239, 232, 0.767);
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 700px;
+}
+
+/* header contains the company logo and name */
+header {
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #a3a2a2, #efcbef);
+    display: flex;
+    align-items: center;/* Align the content vertically */
+    justify-content: center;/* Center the content */
+}
+
+/* under header - company title contains the company name */
+.company-title {
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px; /* Optional: Add some corner radius to the logo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow to the logo */
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.header-text h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+/* navigation bar will contains the links to the other website pages */
+nav ul {
+    list-style-type: none; /* Remove the bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make the navigation items display in a row */
+    justify-content: center; /* Center the navigation items */
+    background-color: #9c9696;
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    display: block;    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Background color on hover */
+    border-radius: 5px; /* Optional: Add corner radius on hover */
+}
+
+/* home page button*/
+.button {
+    background: linear-gradient(to right, #ababab, #808080); /* Gradient background */
+    color: rgb(255, 255, 255); /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow */
+    display: inline-block; /* Ensure proper padding and margin */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    margin-top: 10px;
+    font-size: 1.0em;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #515151, #dbdbdb);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* navigation bar contains the navigation links */
+.breadcrumb-navigation {
+    display: flex;
+    justify-content: space-between; /* Space out the breadcrumb and navigation links */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+
+/* product section contains the product image and product related data */
+.product {
+    display: flex; /* Use Flexbox to align items side by side */
+    justify-content: space-between; /* Space out the product image and info */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+
+/* product image contains the image of the product */
+img {
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: auto;
+}
+
+/* I was having hard to merge both img elements in css, but its working easy for me this way. */
+.product-image {
+    flex: 1; /* Allow the image section to grow */
+    margin-right: 20px;
+    text-align: center;
+}
+
+.product-info {
+    flex: 2; /* Allow the info section to grow more */
+    text-align: left;
+}
+
+.product-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.product-info p, .product-info ul {
+    margin: 10px 0;
+}
+
+.product-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #2c2ff2; /* Updated color */
+    margin: 10px 0;
+    
+}
+
+/* large-image contains the large image of the product*/
+.large-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* buy now and add to cart buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px 0;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-add-to-cart {
+    background-color: #007d1d;
+}
+
+.btn-buy-now {
+    background-color: #0072c3;
+}
+
+/* product variations contains the product variations */
+.product-variations {
+    flex: 1; /* Allow the image section to grow */
+    margin-right: 20px;
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead th {
+    background-color: #00796b;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    background-color: #eeeeee;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #b0bec5;
+}
+
+td, th {
+    border-left: 1px solid #dddddd;
+    padding: 12px 15px;
+}
+
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+
+
+/* similar products contains the similar products list */
+.similar-products {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.similar-products h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: 10%; /* Adjust width to fit three items in one line */
+    text-align: center;
+    flex: 0 0 28%; /* Ensure items don't shrink or grow */
+}
+
+.product-item img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* map section contains the map and address */
+.map {
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0;
+}
+.ic {
+    font-size: 0.4em    
+}
+
+/* Copyright font size */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: center;
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+   COMP213 - (SEC. 405) | Assignment 4
+   Author: Mandeep Singh
+   Student ID: 300858298
+   Date: 14-Nov-2024
+   Filename: Mandeep_Singh_Assignment4.html
+   Related files: 
+   Mandeep_Singh_Assignment4.css
+   Mandeep_Singh_Assignment4_Submited.html
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Continuing Education Course Evaluation Form</title>
+    <link rel="stylesheet" href="Mandeep_Singh_Assignment4.css">
+    <link rel="icon" href="college.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- Header with College Logo and Link -->
+    <header>
+        <a href="Mandeep_Singh_Assignment4.html">
+            <img src="college_logo.jpeg" alt="College Logo">
+        </a>
+        <h1> &nbsp &nbsp &nbsp CENTENNIAL COLLEGE &nbsp</h1>
+        <img class="img-style" src="College_Style4.jpeg" alt="College Logo">
+    </header>
+
+    <h2 class="form-heading">Continuing Education Course Evaluation</h2>
+
+    <!-- Evaluation Form -->
+    <main>
+        <form id="myForm" action="Mandeep_Singh_Assignment4_Submited.html" method="GET">
+            <!-- Student Information -->
+            <h2 class="comments-heading">Please read each statement carefully and consider each one indivually.</h2>
+
+            <section class="evaluation">
+                <h2 class="evaluation-heading">Student Information</h2>
+                <section class="student-info">
+                    <div class="input-group">
+                        <label for="student-name" class="input-label">Student Name:</label>
+                        <input type="text" id="student-name" name="student-name" class="input-field" required>
+                        <label for="student-number" class="input-label">Student Number:</label>
+                        <input type="text" id="student-number" name="student-number" class="input-field" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email" class="input-label">Email:</label>
+                        <input type="email" id="email" name="email" class="input-field" autocomplete="email" required>                    
+                        <label for="phone" class="input-label">Phone:</label>
+                        <input type="tel" id="phone" name="phone" class="input-field" autocomplete="tel" required>
+                    </div>
+                    <div>
+                        <img src="College_Style3.png" alt="collge style" class="img-style3">
+                    </div>
+                </section>
+            </section>
+            <hr>
+            <br>
+
+            <!-- Course and Instructor Information -->
+            <section class="evaluation">
+                <h2 class="evaluation-heading">Course and Instructor Information</h2>
+                <div class="input-group">
+                    <label for="course-name" class="input-label">Course Name/Code:</label>
+                    <input type="text" id="course-name" name="course-name" class="input-field">
+                </div><br>
+                <div class="input--label-group">
+                    <div class="input-label">Semester:</div>
+                    <label class="radio-label">
+                        <input type="radio" name="semester" value="Fall" class="radio-input"> Fall
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="semester" value="Winter" class="radio-input"> Winter
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="semester" value="Spring/Summer" class="radio-input"> Spring/Summer
+                    </label>
+                </div><br>
+                <div class="coloms">
+                    <div class="input-group">
+                        <label for="year" class="input-label">Year:</label>
+                        <input type="text" id="year" name="year" class="input-field">
+                    </div>
+                    <div class="input-group">
+                        <label for="instructor" class="input-label">Instructor:</label>
+                        <input type="text" id="instructor" name="instructor" class="input-field">
+                    </div>
+                </div>
+                <br>
+                <img src="College_Style1.jpeg" alt="collge style" class="img-style1">
+            </section>
+
+            <!-- Instructor Evaluation Section -->
+            <hr>
+            <br>
+            <section class="evaluation">
+                <h2 class="evaluation-heading">Instructor</h2>
+
+                <p class="input-label">1. Knowledge of subject:</p>
+                <div class="input--label-group">
+                    <label class="radio-label">
+                        <input type="radio" name="knowledge" value="Excellent" class="radio-input"> Excellent</label>
+                    <label class="radio-label">
+                        <input type="radio" name="knowledge" value="Good" class="radio-input">Good</label>
+                    <label class="radio-label">
+                        <input type="radio" name="knowledge" value="Fair" class="radio-input">Fair</label>
+                    <label class="radio-label">
+                        <input type="radio" name="knowledge" value="Not Satisfactory" class="radio-input">
+                        Not Satisfactory</label>
+                </div><br>
+
+                <p class="input-label">2. Helpfulness:</p>
+                <div class="input--label-group">
+                    <label class="radio-label">
+                        <input type="radio" name="helpfulness" value="Excellent" class="radio-input"> Excellent</label>
+                    <label class="radio-label">
+                        <input type="radio" name="helpfulness" value="Good" class="radio-input">Good</label>
+                    <label class="radio-label">
+                        <input type="radio" name="helpfulness" value="Fair" class="radio-input">Fair</label>
+                    <label class="radio-label">
+                        <input type="radio" name="helpfulness" value="Not Satisfactory" class="radio-input">
+                        Not Satisfactory</label>
+                </div><br>
+
+                <p class="input-label">3. Courtesy and respect for all students:</p>
+                <div class="input--label-group">
+                    <label class="radio-label">
+                        <input type="radio" name="courtesy" value="Excellent" class="radio-input"> Excellent</label>
+                    <label class="radio-label">
+                        <input type="radio" name="courtesy" value="Good" class="radio-input">Good</label>
+                    <label class="radio-label">
+                        <input type="radio" name="courtesy" value="Fair" class="radio-input">Fair</label>
+                    <label class="radio-label">
+                        <input type="radio" name="courtesy" value="Not Satisfactory" class="radio-input">
+                        Not Satisfactory</label>
+                </div><br>
+
+
+                <p class="input-label">4. Communication skills:</p>
+                <div class="input--label-group">
+                    <label class="radio-label">
+                        <input type="radio" name="communication" value="Excellent" class="radio-input">
+                        Excellent</label>
+                    <label class="radio-label">
+                        <input type="radio" name="communication" value="Good" class="radio-input">Good</label>
+                    <label class="radio-label">
+                        <input type="radio" name="communication" value="Fair" class="radio-input">Fair</label>
+                    <label class="radio-label">
+                        <input type="radio" name="communication" value="Not Satisfactory" class="radio-input">
+                        Not Satisfactory</label>
+                </div><br>
+
+                <p class="input-label">5. Overall performance:</p>
+                <div class="input--label-group">
+                    <label class="radio-label">
+                        <input type="radio" name="performance" value="Excellent" class="radio-input"> Excellent</label>
+                    <label class="radio-label">
+                        <input type="radio" name="performance" value="Good" class="radio-input">Good</label>
+                    <label class="radio-label">
+                        <input type="radio" name="performance" value="Fair" class="radio-input">Fair</label>
+                    <label class="radio-label">
+                        <input type="radio" name="performance" value="Not Satisfactory" class="radio-input">
+                        Not Satisfactory</label>
+                </div>
+            </section>
+
+
+            <!-- Course Evaluation Section -->
+            <hr>
+            <br>
+            <section class="evaluation">
+                <h2 class="evaluation-heading">Course</h2>
+                <p class="input-label">6. How would you rate the course materials?</p>
+                <div class="input--label-group">
+                    <label class="radio-label">
+                        <input type="radio" name="course-materials" value="Excellent" class="radio-input">
+                        Excellent</label>
+                    <label class="radio-label">
+                        <input type="radio" name="course-materials" value="Good" class="radio-input">Good</label>
+                    <label class="radio-label">
+                        <input type="radio" name="course-materials" value="Fair" class="radio-input">Fair</label>
+                    <label class="radio-label">
+                        <input type="radio" name="course-materials" value="Not Satisfactory" class="radio-input"> Not
+                        Satisfactory</label>
+                </div><br>
+
+                <p class="input-label">7. How much did this course meet your expectations?</p>
+                <div class="input--label-group">
+                    <label class="radio-label">
+                        <input type="radio" name="expectations" value="Excellent" class="radio-input"> Excellent</label>
+                    <label class="radio-label">
+                        <input type="radio" name="expectations" value="Good" class="radio-input">Good</label>
+                    <label class="radio-label">
+                        <input type="radio" name="expectations" value="Fair" class="radio-input">Fair</label>
+                    <label class="radio-label">
+                        <input type="radio" name="expectations" value="Not Satisfactory" class="radio-input"> Not
+                        Satisfactory</label>
+                </div><br>
+
+                <p class="input-label">8. How would you rate this course (overall)?</p>
+                <div class="input--label-group">
+                    <label class="radio-label">
+                        <input type="radio" name="course-overall" value="Excellent" class="radio-input">
+                        Excellent</label>
+                    <label class="radio-label">
+                        <input type="radio" name="course-overall" value="Good" class="radio-input">Good</label>
+                    <label class="radio-label">
+                        <input type="radio" name="course-overall" value="Fair" class="radio-input">Fair</label>
+                    <label class="radio-label">
+                        <input type="radio" name="course-overall" value="Not Satisfactory" class="radio-input"> Not
+                        Satisfactory</label>
+                </div>
+            </section>
+
+            <!-- General Information Section -->
+
+            <hr>
+            <br>
+            <section class="evaluation">
+                <h2 class="evaluation-heading">General Information</h2>
+
+                <p class="input-label">9. Was the course outline reviewed/explained at the beginning of your course?</p>
+                <div class="input--label-group">
+                    <label class="radio-label">
+                        <input type="radio" name="course-outline" value="Yes" class="radio-input"> Yes</label>
+                    <label class="radio-label">
+                        <input type="radio" name="course-outline" value="No" class="radio-input">No</label>
+                    <label class="radio-label">
+                        <input type="radio" name="course-outline" value="Not Sure" class="radio-input">Not Sure</label>
+                </div><br>
+
+                <p class="input-label">10. Would you recommend this course to a friend with the same interests?</p>
+                <div class="input--label-group">
+                    <label class="radio-label">
+                        <input type="radio" name="recommend" value="Yes" class="radio-input"> Yes</label>
+                    <label class="radio-label">
+                        <input type="radio" name="recommend" value="No" class="radio-input">No</label>
+                    <label class="radio-label">
+                        <input type="radio" name="recommend" value="Not Sure" class="radio-input">Not Sure</label>
+                </div>
+            </section>
+
+            <!-- Additional Comments Section -->
+            <hr>
+            <br>
+            <section class="comments">
+                <h2 class="comments-heading">Any Other Comments
+                    <img src="College_Style5.jpeg" alt="collge style" class="img-style5">
+                </h2>
+                <div class="input-group">
+                    <label for="best-thing" class="input-label">11. What is the best thing about this course?</label>
+                    <textarea id="best-thing" name="best-thing" class="input-field"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="improve-course" class="input-label">12. How could we improve this course?</label>
+                    <textarea id="improve-course" name="improve-course" class="input-field"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="other-comments" class="input-label">13. Other:</label>
+                    <textarea id="other-comments" name="other-comments" class="input-field"></textarea>
+                </div>
+            </section>
+
+            <!-- Agreement Checkbox -->
+            <div class="input-group">
+                <label for="agreement" class="checkbox-label">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    I certify that the information provided in this evaluation is accurate and true to the best of my knowledge.
+                </label>
+            </div><br>
+
+            <!-- Submission Button -->
+            <button type="submit" class="submit-button">Submit Evaluation</button>
+            <button type="button" class="reload-button" onclick="location.reload()">Reset Form</button>
+
+        </form>
+    </main>
+
+    <!-- Footer with Contact Information -->
+    <footer class="feedback-footer">
+        <p class="footer-text">Thank you! We pay attention to your feedback!</p>
+        <p class="footer-text">
+            Web: <a href="https://www.centennialcollege.ca/online-learning"
+                class="footer-link">www.centennialcollege.ca/online-learning</a>
+        </p>
+        <p class="footer-text">
+            Email: <a href="mailto:continuingeducation@centennialcollege.ca"
+                class="footer-link">continuingeducation@centennialcollege.ca</a>
+        </p>
+    </footer>
+    <br>
+
+    <!-- Copyright Lines -->
+    <footer>
+        <p>&copy; 2024 Mandeep Singh, Student Number: 300858298, COMP213 (SEC. 405) - Web Interface Design</p>
+        <p>College logo and style credit: Centennial College</p>
+    </footer>
+</body>
+</html>

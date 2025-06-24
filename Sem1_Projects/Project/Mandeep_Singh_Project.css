@@ -1,0 +1,258 @@
+/* Mandeep_Singh_Project.css */
+/* General Body Styling */
+.body-content {
+    min-width: 1400px;
+    max-width: 1800px;
+    background: linear-gradient(to right, #e8f4f8, #a1c4fd); /* Gradient background */
+}
+
+.page-container {
+    width: 80%;
+    margin: auto;
+}
+/* Header Section Styling */
+.header-section {
+    position: relative;
+}
+
+.header-background {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: #5c0c06 0px 0px 10px;
+}
+
+.header-logo-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.header-logo {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 2px;
+    width: 120px;
+    transform: rotate3d(.5, -.866, 0, 25deg) rotate(1deg);
+    box-shadow: 2em 4em 6em -2em rgba(0, 0, 0, .5), 1em 2em 3.5em -2.5em rgba(0, 0, 0, .5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.header-logo:hover {
+    transform: rotate3d(0, 0, 0, 0deg) rotate(0deg);
+}
+
+.header-content {
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    color: #3a73a5;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.header-title {
+    font-size: 5em;
+    margin: 0;
+    font-family: 'Brush Script MT', cursive;
+}
+
+/* Navigation Bar Styling */
+.navigation-bar {
+    background-color: #A5463A;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: #5c0c06 0px 0px 10px;
+}
+
+.navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-item {
+    display: inline;
+    font-size: 1.25em;
+    padding: 0 15px;
+    border-right: 1px solid white;
+    font-family: Georgia, serif;
+}
+
+.navigation-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-link:hover {
+    text-decoration: underline;
+}
+
+.navigation-item:last-child {
+    border-right: none;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-top: 20px;
+    display: flex;
+}
+
+.left-side {
+    width: 60%;
+}
+
+.right-side {
+    width: 50%;
+}
+
+/* Section Styling */
+.section-story, .section-mission, .section-team {
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.section-story:hover, .section-mission:hover, .section-team:hover {
+    box-shadow: #5c0c06 0px 0px 10px;
+    transform: scale(1.025);
+}
+
+.section-background {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: #5c0c06 0px 0px 10px;
+    opacity: 0.1;
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    margin-top: 0px;
+    font-size: 2.5em;
+    color: #640000;
+    text-shadow: 2px 2px 2px #82c5ff;
+}
+
+.section-description {
+    position: absolute;
+    bottom: 0px;
+    color: #000000;
+    font-size: 1.25em;
+    text-shadow: 1px 1px 1px #ffffff;
+    text-align: justify;
+    padding: 10px;
+}
+
+/* Menu Section Styling */
+.menu-section {
+    padding: 10px;
+    background-color: #f0f7ff;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px -20px rgba(198, 156, 156, 0.806);
+    transition: 0.2s ease-in-out transform;
+    margin-left: 20px;    
+    cursor: pointer;
+    transform:
+    perspective(750px)
+    translate3d(0px, 0px, -50px)
+    rotateX(27deg)
+    scale(0.9, 0.9);
+    &:hover {
+        transform: translate3d(0px, 0px, -50px);
+      }      
+}
+
+.menu-section:hover {
+    transform: scale(1.05);
+}
+
+
+
+.menu-item-title {
+    font-size: 25px;
+    color: #333;
+    text-decoration: none;    
+    margin-top: 5px;
+
+}
+
+.menu-item-background {
+    position: relative;
+    width: 150px;
+    border-radius: 5px;
+}
+
+
+/*
+.menu-item-background {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.menu-item-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.menu-item-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    z-index: 2;
+    text-align: center;
+}
+
+*/
+
+
+
+/* Background container styling */
+.menu-item-background {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+/* Background image styling */
+.menu-background-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-text {
+    margin: 0;
+}
+

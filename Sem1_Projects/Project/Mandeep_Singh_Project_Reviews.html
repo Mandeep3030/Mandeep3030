@@ -1,0 +1,107 @@
+<!--
+    COMP213 - (SEC. 405) | Project
+    Author: Mandeep Singh
+    Student ID: 300858298
+    Date: 12-Nov-2024
+    Filename: Mandeep_Singh_Menu.html
+    Related files:
+    Mandeep_Singh_Project.html
+    Mandeep_Singh_Project.css
+    Mandeep_Singh_Contact.css
+-->
+    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fork & Flame - Customer Reviews</title>
+    <link rel="stylesheet" href="Mandeep_Singh_Project.css">
+    <link rel="stylesheet" href="Mandeep_Singh_Contact.css">
+</head>
+
+<body class="body-content">
+    <div class="page-container">
+
+        <!-- Header Section with Background Image and Title -->
+        <header class="header-section">
+            <img src="Background1.jpeg" alt="Background Image" class="header-background">
+            <div class="header-logo-container" onclick="location.href='Mandeep_Singh_Project.html'">
+                <img src="Logo.jpeg" alt="Logo" class="header-logo">
+            </div>
+            <div class="header-content">
+                <h1 class="header-title">Fork & Flame</h1>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav class="navigation-bar">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="Mandeep_Singh_Project.html" class="navigation-link">Home</a></li>
+                <li class="navigation-item"><a href="Mandeep_Singh_Project_Menu.html" class="navigation-link">Menu</a></li>
+                <li class="navigation-item"><a href="Mandeep_Singh_Project_Chef.html" class="navigation-link">Chef's Specials</a></li>
+                <li class="navigation-item"><a href="Mandeep_Singh_Project_Gallery.html" class="navigation-link">Gallery</a></li>
+                <li class="navigation-item"><a href="Mandeep_Singh_Project_Contact.html" class="navigation-link">Contact</a></li>
+                <li class="navigation-item"><a href="Mandeep_Singh_Project_Reviews.html" class="navigation-link">Customer reviews</a></li>
+            </ul>
+        </nav>
+
+        <!-- Reviews Section -->
+        <main class="contactPage-section">
+            <h2 class="contactPage-title">Customer Reviews</h2>
+
+            <!-- Display Existing Reviews -->
+            <div class="reviewsPage-list">
+                <div class="review-item">
+                    <p class="review-name">John Doe</p>
+                    <p class="review-rating">★★★★★</p>
+                    <p class="review-comment">"Amazing food and great service! Highly recommend the Grilled Chicken."</p>
+                </div>
+                <div class="review-item">
+                    <p class="review-name">Jane Smith</p>
+                    <p class="review-rating">★★★★☆</p>
+                    <p class="review-comment">"The Chocolate Cake was delicious. A bit crowded, but worth the wait!"</p>
+                </div>
+                <div class="review-item">
+                    <p class="review-name">Michael Brown</p>
+                    <p class="review-rating">★★★★★</p>
+                    <p class="review-comment">"Excellent ambiance and friendly staff. Loved the Pan-Seared Salmon."</p>
+                </div>
+            </div>
+
+            <!-- Add a New Review Form -->
+            <section class="contactPage-form">
+                <h3 class="form-title">Leave a Review</h3>
+                <form>
+                    <div class="form-row">
+                        <label for="review-name">Name:</label>
+                        <input type="text" id="review-name" class="input-field" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-row">
+                        <select id="review-rating" class="input-field" name="rating" required>
+                            <option value="5">★★★★★ (5)</option>
+                            <option value="4">★★★★☆ (4)</option>
+                            <option value="3">★★★☆☆ (3)</option>
+                            <option value="2">★★☆☆☆ (2)</option>
+                            <option value="1">★☆☆☆☆ (1)</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="review-comment">Comments:</label>
+                        <textarea id="review-comment" class="input-field" name="comment" rows="4" placeholder="Enter your comments"></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p class="footer-text">&copy; 2024 Mandeep Singh, Student Number: 300858298, COMP213 (SEC. 405) - Web Interface Design</p>
+            <p class="footer-text">References: sugarsaltmagic.com | istockphoto.com | healthygreenkitchen.com </p>
+        </footer>
+    </div>
+</body>
+
+</html>
